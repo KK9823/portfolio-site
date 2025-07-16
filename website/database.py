@@ -1,5 +1,4 @@
 import json
-from flask import url_for
 
 class Project:
     def __init__(self, id, title, description, languages, github_link, image_path="", alt_text="", tags=None, frameworks=None, description_long=None, spotlight=False):
