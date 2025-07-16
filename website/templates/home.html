@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1 align="center">Projects</h1>
+<ul class="projects-container">
+    {% for project in projects %}
+
+        {% if project.spotlight %}
+        <li class="list-group-item project-card spotlight">
+        {% else %}
+        <li class="list-group-item project-card">
+        {% endif %}
+
+        <div class="card-content">
+
+        <a href="/project/{{ project.id }}">
+          <h2>{{ project.title }}</h2>
+        </a>
+
+        {% if project.image_path %}
+        <img
+            src="{{ url_for('static', filename=project.image_path) }}"
+            class="img-thumbnail"
+            style="width: 100%; height: auto; display: block;"
+            alt="{{ project.alt_text }}"
+        >
+        {% endif %}
+
+        {% if project.spotlight %}
+            <p style="color: #f0f0f0;">{{ project.description }}</p>
+        {% else %}
+            <p>{{ project.description }}</p>
+        {% endif %}
+
+        {% if project.tags %}
+        <div class="project-tags-section">
+            {% for tag in project.tags %}
+            <span class="project-tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <a href="{{ project.github_link }}" target="_blank" class="btn">
+            View Code <i class="fab fa-github"></i>
+        </a>
+
+
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

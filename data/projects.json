@@ -1,0 +1,53 @@
+[
+  {
+    "id": 0,
+    "title": "Portfolio Website",
+    "description": "Personal portfolio website made with flask to showcase my own projects. You are looking at it right now!",
+    "languages": ["Python", "HTML", "CSS"],
+    "github_link": "https://github.com/KK9823/Ping-Pong",
+    "image_path": "photos/PortfolioWebsite.png",
+    "alt_text": "Portfolio Website Image",
+    "tags": ["Python", "Flask", "JSON Database", "Web Development"],
+    "frameworks": ["Flask"],
+    "description_long": [
+      "This portfolio website is built using Flask and uses a JSON-based database. It is designed to dynamically load project content and route users to detailed project pages using basic and readable URLs (project/<id>).",
+      "The site is read-only and focuses on showcasing projects with fast, GET-only interactions, along with dynamic routing logic. In terms of frontend design, it uses a flexible card layout with tag-based styling, and custom CSS with Flexbox and responsive design patterns.",
+      "Building this helped me understand the separation of backend and frontend, what templating is and how it worked, and frontend styling. It gave me experience working with Jinja2, JSON format, and creative design touches like hover effects and animated elements.",
+      "Most important aspects I had in mind while developing this website are to keep it lightweight, scalable and easily updatable. I also plan to add more features such as filtering projects by tags, along with more frontend and backend features in the future."
+    ],
+    "spotlight": true
+  },
+  {
+    "id": 1,
+    "title": "Ping Pong",
+    "description": "Simple ping pong game using pygame",
+    "languages": ["Python"],
+    "github_link": "https://github.com/KK9823/Ping-Pong",
+    "image_path": "photos/PingPong.png",
+    "alt_text": "Ping Pong Image",
+    "tags": ["Python", "Pygame", "Game"],
+    "frameworks": ["Pygame"],
+    "description_long": [
+      "Built using the pygame framework. This project helped me get hands-on experience with keyboard input handling, real-time game loops, and basic collision physics. The game features dynamic movement logic for paddles and ball, real-time collision detection, and score tracking.",
+      "As gameplay progresses, a difficulty counter gradually ramps up the challenge by increasing the ball’s speed and creates a reflex-based experience where players must adapt to a faster ball. Instead of endless play with static pacing, this evolving difficulty adds tension and a built-in \"survival mode\" for players to see how far they can go.",
+      "This is one of my first projects working with pygame. It gave me a good understanding of how pygame worked, along with some experience and familiarity with the module itself. Implementing features such as input handling and collision detection without using pygame's sprite classes gave me a good understanding of how they worked under the hood. While I managed to implement these features in this project without sprite classes, I plan to learn how to use them going forwards as it will help me structure the code and refine it further. But it was a good learning experience to try and code them from scratch."
+    ],
+    "spotlight": false
+  },
+  {
+    "id": 2,
+    "title": "Cross Road",
+    "description": "A game where you have to cross a road while avoiding obstacles",
+    "languages": ["Python"],
+    "github_link": "https://github.com/KK9823/Cross-Road",
+    "image_path": "photos/CrossRoad.png",
+    "alt_text": "Cross Road Image",
+    "tags": ["Python", "Pygame", "Game"],
+    "frameworks": ["Pygame"],
+    "description_long": [
+      "In this game, the objective is simple. Get your character safely across a busy road while avoiding oncoming cars, represented by red rectangles. The cars speed horizontally across the screen, and you spawn at the bottom with the goal of reaching the opposite side.",
+      "This project was my first hands-on experience with pygame’s sprite classes. There were several key design challenges, including refining player movement, enforcing screen boundaries, and preventing the player from clipping into neutral (gray) objects. I also implemented timed obstacle spawning, ensuring that cars follow a fixed route with randomized intervals to maintain unpredictability and tension."
+    ],
+    "spotlight": false
+  }
+]
