@@ -1,5 +1,5 @@
 from flask import Flask
-from os import path
+from os import path, environ
 from secrets import token_hex
 
 def create_app():
@@ -13,6 +13,10 @@ def create_app():
     return app
 
 def get_secret_key(filename):
+
+    if "SECRET_KEY" in environ:
+        return environ["SECRET_KEY"]
+
     if path.exists(filename):
         with open(filename, "r") as file:
             return file.read()
