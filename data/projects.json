@@ -4,7 +4,7 @@
     "title": "Portfolio Website",
     "description": "Personal portfolio website made with flask to showcase my own projects. You are looking at it right now!",
     "languages": ["Python", "HTML", "CSS"],
-    "github_link": "https://github.com/KK9823/Ping-Pong",
+    "github_link": "https://github.com/KK9823/portfolio-site",
     "image_path": "photos/PortfolioWebsite.png",
     "alt_text": "Portfolio Website Image",
     "tags": ["Python", "Flask", "JSON Database", "Web Development"],
